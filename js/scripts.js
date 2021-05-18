@@ -16,6 +16,7 @@ $(document).ready(function() {
         $(".sidebar").show();
         $("header").hide();
         $(".sidebar__close").show();
+        $(".select-filters").show();
     })
 
     $(".filters .save__filter").click(function() {
@@ -24,6 +25,7 @@ $(document).ready(function() {
         $(".sidebar").hide();
         $("header").show();
         $(".sidebar__close").hide();
+        $(".select-filters").hide();
     })
     $(".sidebar__close button").click(function() {
         $(".main").show();
@@ -31,6 +33,7 @@ $(document).ready(function() {
         $(".sidebar").hide();
         $("header").show();
         $(".sidebar__close").hide();
+        $(".select-filters").hide();
     })
 
 
@@ -146,7 +149,22 @@ $(document).ready(function() {
             })
         }
     }
+
+    function dropDown2() {
+        if ($('.card').length) {
+            $('.card').each(function() {
+                var $this = $(this),
+                    btn = $this.find('.card__drop > button'),
+                    drop = $this.find('.card__drop');
+                btn.on('click', function() {
+                    drop.stop().slideToggle();
+                    btn.toggleClass('active');
+                })
+            })
+        }
+    }
     dropDown();
+    dropDown2()
 
     // JQueryScrollbar
     $('.scrollbar-inner').scrollbar();
