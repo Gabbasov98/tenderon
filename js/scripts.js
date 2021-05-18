@@ -14,12 +14,23 @@ $(document).ready(function() {
         $(".main").hide();
         $(".search").hide();
         $(".sidebar").show();
+        $("header").hide();
+        $(".sidebar__close").show();
     })
 
     $(".filters .save__filter").click(function() {
         $(".main").show();
         $(".search").show();
         $(".sidebar").hide();
+        $("header").show();
+        $(".sidebar__close").hide();
+    })
+    $(".sidebar__close button").click(function() {
+        $(".main").show();
+        $(".search").show();
+        $(".sidebar").hide();
+        $("header").show();
+        $(".sidebar__close").hide();
     })
 
 
