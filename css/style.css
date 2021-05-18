@@ -2428,6 +2428,13 @@ aside .sort__switch,
         box-shadow: -5px -8px 10px rgba(170, 170, 204, 0.25), 5px 2px 8px rgba(170, 170, 204, 0.5);
         border-radius: 10px 10px 0 0;
         padding: 9px 27px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .page {
+        position: relative;
     }
     .main__footer-mob-btn {
         width: 34px;
