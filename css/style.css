@@ -2227,6 +2227,15 @@ aside .sort__switch,
     .card {
         margin-bottom: 7px;
     }
+    .cards {
+        padding-top: 25px;
+    }
+    .header__logo {
+        width: 102px;
+        height: 22px;
+        max-width: unset;
+        max-height: unset;
+    }
     .header__burger {
         height: 14.5px;
         width: 18px;
@@ -2629,7 +2638,7 @@ aside .sort__switch,
         margin-bottom: 16px;
     }
     .header {
-        margin-bottom: 18px;
+        margin-bottom: 12px;
     }
     .card__drop {
         position: relative;
