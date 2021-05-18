@@ -36,6 +36,13 @@ $(document).ready(function() {
         $(".select-filters").hide();
     })
 
+    if (($(window).width()) < 992) {
+        $("#search").attr("placeholder", "Поиск по наименованию закупки, реестровому номеру, наименованию...");
+    }
+    if (($(window).width()) < 768) {
+        $("#search").attr("placeholder", "Поиск по критериям");
+    }
+
 
 
 
