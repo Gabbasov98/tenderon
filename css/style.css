@@ -2557,7 +2557,16 @@ aside .sort__switch,
     }
     .select-filters__row {
         flex-wrap: nowrap;
-        overflow-x: hidden;
+        overflow-x: auto;
+    }
+    .select-filters__row::-webkit-scrollbar {
+        display: none;
+    }
+    .select-filters__row::-webkit-scrollbar-track {
+        display: none;
+    }
+    .select-filters__row::-webkit-scrollbar-thumb {
+        display: none;
     }
     aside .sort__switch {
         display: -webkit-box;
