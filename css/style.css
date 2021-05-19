@@ -2759,6 +2759,13 @@ aside .sort__switch,
         border-bottom: 1px solid #D3E0ED;
         padding: 16px 0;
     }
+    .user__drop ul li:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .user__drop ul li:first-child {
+        margin-top: 0;
+    }
     .footer {
         margin-top: 0;
     }
@@ -2780,5 +2787,9 @@ aside .sort__switch,
         bottom: 0;
         left: 0;
         width: 100%;
+    }
+    .main__footer-mob .a,
+    .user__drop .a {
+        fill: #31456a;
     }
 }
