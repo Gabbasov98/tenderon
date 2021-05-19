@@ -2690,6 +2690,9 @@ aside .sort__switch,
         background-position: center;
         box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.55), 3px 3px 5px rgba(136, 160, 183, 0.35);
         border-radius: 44px;
+        position: absolute;
+        right: 100px;
+        bottom: 16px;
     }
     .card__journal-arrow {
         display: none;
@@ -2710,7 +2713,7 @@ aside .sort__switch,
         margin-left: 10px;
         transition: 0.3s;
     }
-    .card__mob-detail .card__journal-arrow--active {
+    .card__mob-detail .card__journal-arrow--active::after {
         transform: rotate(180deg);
     }
     .card__mob-detail {
@@ -2755,5 +2758,8 @@ aside .sort__switch,
     .card__name,
     .card__category {
         margin-right: 10px;
+    }
+    .card__footer {
+        /* position: relative; */
     }
 }
