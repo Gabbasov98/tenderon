@@ -62,7 +62,7 @@ $(document).ready(function() {
         card__col__3.children(".card__desc").slideToggle()
         card__head.toggleClass("card__head--active");
         $(this).children(".card__journal-arrow").toggleClass("card__journal-arrow--active")
-        card__text__p.children(".card__text-hide").slideToggle()
+        card__text__p.toggleClass("active");
     })
 
 

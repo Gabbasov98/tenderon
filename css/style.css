@@ -411,12 +411,12 @@ body.lock {
 
 
 /*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
+* Hamburgers
+* @description Tasty CSS-animated hamburgers
+* @author Jonathan Suh @jonsuh
+* @site https://jonsuh.com/hamburgers
+* @link https://github.com/jonsuh/hamburgers
+*/
 
 .hamburger {
     padding: 15px 15px;
@@ -506,8 +506,8 @@ body.lock {
 
 
 /*
-   * Squeeze
-   */
+* Squeeze
+*/
 
 .hamburger--squeeze .hamburger-inner {
     -webkit-transition-duration: 0.075s;
@@ -1495,6 +1495,11 @@ body.lock {
     margin-bottom: 25px;
 }
 
+.footer__logo svg {
+    height: 100%;
+    max-height: unset;
+}
+
 .footer__title {
     margin-bottom: 28px;
     font-size: 14px;
@@ -1906,6 +1911,10 @@ aside .sort__switch,
     display: none;
 }
 
+.user__drop .a {
+    fill: #31456a;
+}
+
 @media (max-width: 992px) {
     .pagination__arrows a {
         margin-right: 10px;
@@ -2305,8 +2314,8 @@ aside .sort__switch,
         display: none;
     }
     /* .select-filters {
-        display: none;
-    } */
+display: none;
+} */
     .title-head {
         display: flex;
         padding-bottom: 0;
@@ -2791,5 +2800,15 @@ aside .sort__switch,
     .main__footer-mob .a,
     .user__drop .a {
         fill: #31456a;
+    }
+    .card__text p {
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .card__text p.active {
+        overflow: visible;
+        display: block;
     }
 }
