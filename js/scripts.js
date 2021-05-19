@@ -4,7 +4,12 @@
 //  Email: ivan.frontcoder@gmail.com
 
 $(document).ready(function() {
-
+    $("  .main__footer-mob-btn.user-drop-open").click(function() {
+        $(".footer .user__drop").css("display", "block");
+    })
+    $(".content").click(function() {
+        $(".footer .user__drop").css("display", "none");
+    })
     $(".header__burger").click(function() {
         $(this).toggleClass("header__burger--active");
         $(".header__bottom").slideToggle()
@@ -17,6 +22,7 @@ $(document).ready(function() {
         $("header").hide();
         $(".sidebar__close").show();
         $(".select-filters").show();
+        $(".main__footer-mob").hide();
     })
 
     $(".filters .save__filter").click(function() {
@@ -26,6 +32,7 @@ $(document).ready(function() {
         $("header").show();
         $(".sidebar__close").hide();
         $(".select-filters").hide();
+        $(".main__footer-mob").show();
     })
     $(".sidebar__close button").click(function() {
         $(".main").show();
@@ -34,6 +41,7 @@ $(document).ready(function() {
         $("header").show();
         $(".sidebar__close").hide();
         $(".select-filters").hide();
+        $(".main__footer-mob").show();
     })
 
     if (($(window).width()) < 992) {
@@ -42,6 +50,20 @@ $(document).ready(function() {
     if (($(window).width()) < 768) {
         $("#search").attr("placeholder", "Поиск по критериям");
     }
+
+    $(".card__mob-detail").click(function() {
+        let card__body = $(this).parents(".card__body");
+        let card__head = card__body.children(".card__head");
+        let card__col__2 = card__head.children(".card__col--2");
+        let card__text = card__body.children(".card__text");
+        let card__text__p = card__text.children("p");
+        let card__col__3 = card__head.children(".card__col--3");
+        card__col__2.children(".card__desc").slideToggle()
+        card__col__3.children(".card__desc").slideToggle()
+        card__head.toggleClass("card__head--active");
+        $(this).children(".card__journal-arrow").toggleClass("card__journal-arrow--active")
+        card__text__p.children(".card__text-hide").slideToggle()
+    })
 
 
 
