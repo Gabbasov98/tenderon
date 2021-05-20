@@ -2236,7 +2236,7 @@ aside .sort__switch,
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .card {
         margin-bottom: 7px;
     }
