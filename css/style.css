@@ -2200,7 +2200,7 @@ aside .sort__switch,
     }
     .card__journal-arrow:after {
         background-position: center;
-        background-size: 5px 2.7;
+        /* background-size: 5px 2.7; */
     }
     .card__name {
         margin-right: 15px;
@@ -2767,6 +2767,16 @@ display: none;
     .user__drop ul li {
         border-bottom: 1px solid #D3E0ED;
         padding: 16px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .user__drop ul li>button {
+        background-color: inherit;
+        border: none;
     }
     .user__drop ul li:last-child {
         border-bottom: none;
