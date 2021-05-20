@@ -1907,7 +1907,9 @@ aside .sort__switch,
 .sidebar__close,
 .filters .save__filter,
 .card__drop>button,
-.card__mob-detail {
+.card__mob-detail,
+.card__drop-journal,
+.sort__drop--hide {
     display: none;
 }
 
@@ -2457,16 +2459,21 @@ display: none;
     .card__drop {
         display: none;
         padding: 15px 11px;
+        padding-top: 30px;
         transform: translate(0, 0px);
         margin-bottom: 0;
         margin-top: 15px;
     }
     .card__drop-col--1 {
-        width: 55px;
+        width: 42px;
         margin-right: 10px;
     }
+    .card__col--1 .card__desc {
+        display: block;
+        margin-top: 4px;
+    }
     .card__drop-col--2 {
-        width: 70px;
+        width: 55px;
         margin-right: 10px;
     }
     .card__stick--blue {
@@ -2808,10 +2815,27 @@ display: none;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color: #31456A;
+    }
+    .user__drop ul li a span {
+        margin-left: 15px;
+        display: block;
     }
     .user__drop ul li>button {
         background-color: inherit;
         border: none;
+    }
+    .user__drop ul li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .user__drop ul li:last-child {
         border-bottom: none;
@@ -2854,6 +2878,15 @@ display: none;
     }
     .card__text p.active {
         overflow: visible;
+        display: block;
+    }
+    .card__drop-journal {
+        display: block;
+        position: absolute;
+        top: 15px;
+        font-weight: 500;
+    }
+    .sort__drop--hide {
         display: block;
     }
 }
