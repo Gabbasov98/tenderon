@@ -2886,8 +2886,11 @@ aside .sort__switch,
         height: 14px;
     }
     .footer__col:last-child {
-        width: 141px;
+        width: 148px;
         margin-left: auto;
+    }
+    .calendar-card__name {
+        display: none;
     }
     .calendar-card__footer {
         border: none;
