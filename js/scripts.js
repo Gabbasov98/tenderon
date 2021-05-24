@@ -71,6 +71,7 @@ $(document).ready(function() {
         $(".calendar__card").removeClass("calendar__card--active")
         $(this).addClass("calendar__card--active");
         $(".calendar__drop").show(300);
+        $(".modal-bg").show();
     })
 
 
@@ -199,6 +200,48 @@ $(document).ready(function() {
     }
     dropDown();
     dropDown2()
+
+    $(".card__drop--calendar > button").click(function() {
+        $(this).parents(".card__drop").slideToggle()
+    })
+
+    $(".card__journal--calendar").click(function() {
+        $(this).toggleClass("active");
+        $(this).siblings(".card__drop--calendar").slideToggle();
+        if ($(window).width() < 768) {
+            $(this).parents(".calendar-card__footer").siblings(".card__drop--calendar").slideToggle();
+            $(".modal-bg").show();
+        }
+    })
+
+
+
+    // Появление модального окна ответа
+    $(".day-chart__item").click(function() {
+        $(".calendar-cards__answer").slideToggle(200);
+        $(".modal-bg").slideToggle();
+    })
+    $(".modal-bg").click(function() {
+            $(".calendar-cards__answer").hide(200);
+            $(".modal-bg").hide();
+            $(".card__drop--calendar").hide(200);
+            $(".calendar__drop").hide(200);
+        })
+        // 
+    $(".calendar-card__detail").click(function() {
+        if ($(window).width() > 767) {
+            $(".card__drop--calendar2").slideToggle()
+            $(".calendar-card__detail").toggleClass("calendar-card__detail--active")
+        } else {
+            $(".card__drop-text2").slideToggle()
+            $(".calendar-card__detail").toggleClass("calendar-card__detail--active")
+        }
+
+    })
+    $(".calendar__drop-close").click(function() {
+        $(".calendar__drop").hide(200);
+        $(".modal-bg").hide();
+    })
 
     // JQueryScrollbar
     $('.scrollbar-inner').scrollbar();
