@@ -2887,6 +2887,7 @@ aside .sort__switch,
     }
     .calendar-card__footer {
         border: none;
+        margin-top: 0;
     }
     .calendar-card__info.tablet {
         display: flex;
@@ -3187,7 +3188,8 @@ aside .sort__switch,
         margin-right: 15px;
     }
     .card__journal {
-        margin-right: 0;
+        margin-right: -7px;
+        margin-top: 40px;
     }
     .filters__block {
         padding-right: 0px;
