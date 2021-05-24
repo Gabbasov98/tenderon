@@ -2885,6 +2885,10 @@ aside .sort__switch,
         width: 14px;
         height: 14px;
     }
+    .footer__col:last-child {
+        width: 141px;
+        margin-left: auto;
+    }
     .calendar-card__footer {
         border: none;
         margin-top: 0;
@@ -3151,6 +3155,13 @@ aside .sort__switch,
         flex-wrap: wrap;
     }
     .footer__stores a {
+        margin-top: 13px;
+    }
+    .footer__stores a:first-child {
+        width: 105px;
+    }
+    .footer__stores a:last-child {
+        width: 96px;
         margin-top: 10px;
     }
     .footer__title--nomar br {
@@ -3159,6 +3170,9 @@ aside .sort__switch,
     .footer__title,
     .footer__logo {
         margin-bottom: 18px;
+    }
+    .footer__title--nomar {
+        margin-bottom: 0;
     }
     .footer__logo {
         width: 74px;
