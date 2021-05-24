@@ -1344,6 +1344,7 @@ body.lock {
     height: 22px;
     border-radius: 100%;
     margin-left: 10px;
+    flex-shrink: 0;
 }
 
 .card__journal-arrow:after {
@@ -1976,7 +1977,7 @@ aside .sort__switch,
     font-weight: 600;
     font-size: 40px;
     line-height: 49px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 17px;
     color: #31456A;
 }
@@ -2687,6 +2688,7 @@ aside .sort__switch,
     height: 22px;
     border: none;
     position: relative;
+    flex-shrink: 0;
 }
 
 .calendar-card__detail button:after {
@@ -2821,6 +2823,12 @@ aside .sort__switch,
 .calendar__all-btn {
     display: none;
 }
+
+.card__journal--deck {
+    display: none;
+}
+
+.card__drop-journal--deckstop {}
 
 @media (max-width: 992px) {
     .pagination__arrows a {
@@ -3149,8 +3157,8 @@ aside .sort__switch,
         width: calc(100% - 30px);
     }
     .calendar-card__hidden {
-        opacity: 0;
-        visibility: hidden;
+        /* opacity: 0; */
+        /* visibility: hidden; */
         transition: 0.5s ease;
     }
     .calendar-card__hidden.active {
@@ -3186,6 +3194,12 @@ aside .sort__switch,
 }
 
 @media (max-width: 767px) {
+    .card__journal--deck {
+        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
     .header__burger {
         display: block;
     }
@@ -4011,6 +4025,7 @@ aside .sort__switch,
         border-radius: 44px;
         border: none;
         margin-left: 3px;
+        flex-shrink: 0;
     }
     .calendar-card__detail button {
         width: 15px;

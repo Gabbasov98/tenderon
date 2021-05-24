@@ -230,11 +230,11 @@ $(document).ready(function() {
         // 
     $(".calendar-card__detail").click(function() {
         if ($(window).width() > 767) {
-            $(".card__drop--calendar2").slideToggle()
-            $(".calendar-card__detail").toggleClass("calendar-card__detail--active")
+            $(this).parents(".calendar-card__footer").siblings(".card__drop--calendar2").slideToggle()
+            $(this).toggleClass("calendar-card__detail--active")
         } else {
-            $(".card__drop-text2").slideToggle()
-            $(".calendar-card__detail").toggleClass("calendar-card__detail--active")
+            $(this).parents(".calendar-card__footer").siblings(".card__drop-text2").slideToggle()
+            $(this).toggleClass("calendar-card__detail--active")
         }
 
     })
