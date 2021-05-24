@@ -2881,6 +2881,13 @@ aside .sort__switch,
 .card__drop-journal--deckstop {}
 
 @media (max-width: 992px) {
+    .calendar-card__detail button {
+        width: 14px;
+        height: 14px;
+    }
+    .calendar-card__footer {
+        border: none;
+    }
     .calendar-card__info.tablet {
         display: flex;
     }
