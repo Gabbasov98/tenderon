@@ -233,8 +233,8 @@ $(document).ready(function() {
             $(this).parents(".calendar-card__footer").siblings(".card__drop--calendar2").slideToggle()
             $(this).toggleClass("calendar-card__detail--active")
         } else {
-            $(this).parents(".calendar-card__footer").siblings(".card__drop-text2").slideToggle()
-            $(this).toggleClass("calendar-card__detail--active")
+            $(".card__drop-text2").slideToggle()
+            $(".calendar-card__detail").toggleClass("calendar-card__detail--active")
         }
 
     })
